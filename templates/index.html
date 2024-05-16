@@ -1,0 +1,20 @@
+{% from 'form_helper.html' import displayField %}
+{% extends "base.html" %}
+
+{% block title %} 
+    Home
+{% endblock %}
+ast {% block content %}
+    <div>
+        <form action="{{url_for('index')}}", method="POST">
+            <div>
+                {{displayField(form.query,'Message')}}
+
+            </div>
+            <div>
+                {{ form.submit_button}}
+            </div>
+            {{ form.csrf_token }}
+        </form>
+    </div>
+{% endblock %}
