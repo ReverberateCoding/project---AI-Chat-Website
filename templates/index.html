@@ -4,17 +4,29 @@
 {% block title %} 
     Home
 {% endblock %}
-ast {% block content %}
-    <div>
-        <form action="{{url_for('index')}}", method="POST">
-            <div>
-                {{displayField(form.query,'Message')}}
-
-            </div>
-            <div>
-                {{ form.submit_button}}
-            </div>
-            {{ form.csrf_token }}
-        </form>
+{% block content %}
+    <div class="first">
+        <img src="static\image1.gif">
     </div>
+    <div class="second">
+        <div class="comments">
+            <div class="comment bubble">
+                <p>{{response}}</p>
+            </div>
+        </div>
+        
+        <div>
+            <form action="{{url_for('index')}}", method="POST">
+                <div>
+                    {{displayField(form.query,'Message')}}
+    
+                </div>
+                <div>
+                    {{ form.submit_button}}
+                </div>
+                {{ form.csrf_token }}
+            </form>
+        </div>
+    </div>
+
 {% endblock %}

@@ -1,4 +1,9 @@
 from app import create_app
+import os
+
+os.remove('query.txt')
+with open('query.txt','x') as file:
+    pass
 
 flask_app = create_app()
 

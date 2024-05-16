@@ -1,0 +1,43 @@
+body {
+    background: #f0f0f0;
+}
+
+.comments {
+    width: 400px;
+}
+
+.comments .comment {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.comments .comment p {
+    margin: 0 0 10px 0;
+}
+
+.bubble {
+    position: relative;
+    background: #fff;
+    padding: 20px;
+    color: #222;
+    border-radius: 3px;
+    margin-left: 20px;
+}
+
+.bubble::after {
+    display: block;
+    position: absolute;
+
+}
+
+.first{
+    width:50vw;
+    height: 100px;
+    float: left;
+}
+
+.second {
+    width: 50vw;
+    height: 100px;
+    float: right;
+}
