@@ -16,6 +16,9 @@
         </div>
         
         <div>
+            {% for message in chat_history %}
+                <p>{{message}}</p>
+            {% endfor %}
             <form action="{{url_for('index')}}", method="POST">
                 <div>
                     {{displayField(form.query,'Message')}}
