@@ -8,9 +8,7 @@ On submit:
   Display new response
 
 To do:
-- Textbox done
-- Button done
-- Deletion of current response
-- Deletion of text in textbook
-- Generate new response
-- Display new response
+- Voice chat
+- Multiple characters + details
+- Fix message save
+- Reset button
